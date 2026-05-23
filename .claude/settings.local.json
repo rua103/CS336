@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run *)",
+      "PowerShell(uv run *)",
+      "PowerShell(python -m pytest assignment1/tests/test_tokenizer.py::test_roundtrip_empty -v --tb=long 2>&1 | Select-Object -Last 60)",
+      "Bash(python *)",
+      "PowerShell(python -m pytest assignment1/tests/test_tokenizer.py -v --tb=line 2>&1 | Select-Object -First 80)",
+      "PowerShell(python -m pytest assignment1/tests/test_tokenizer.py -v --tb=line 2>&1 | Select-Object -First 50)",
+      "PowerShell(python -m pytest assignment1/tests/test_tokenizer.py -v --tb=line 2>&1 | Select-Object -First 40)",
+      "PowerShell(python -m pytest \"assignment1/tests/test_tokenizer.py::test_unicode_string_with_special_tokens_matches_tiktoken\" -v --tb=long 2>&1 | Select-Object -Last 40)",
+      "PowerShell(python -m pytest \"assignment1/tests/test_tokenizer.py::test_unicode_string_with_special_tokens_matches_tiktoken\" -vv --tb=long 2>&1 | Select-Object -Last 50)"
+    ]
+  }
+}
